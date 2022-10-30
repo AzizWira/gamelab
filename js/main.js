@@ -1,59 +1,75 @@
-let tl1=gsap.timeline({
-  scrollTrigger:{
-      trigger:".sec1",
-      start:"0%",
-      end:"90%",
-      scrub:1
-  }
-},);
-let tl2=gsap.timeline({
-  scrollTrigger:{
-      trigger:".sec1",
-      start:"0%",
-      end:"90%",
-      scrub:1
-  }
-},);
+const menu = document.querySelector('.menu-btn');
+const topLeftSlider = document.querySelector('.top-left-slide');
+const bottomLeftSlider = document.querySelector('.bottom-left-slide');
 
-tl1.fromTo(".quotes",{y:0},{y:-400});
-tl2.fromTo(".logo",{scale:4},{scale:1,top:"0.7rem",left:"3rem",x:"50%",y:"50%"});
-let tl4=gsap.timeline({
-  scrollTrigger:{
-      trigger:".sec",
-      start:"0%",
-      end:"90%",
-      scrub:1
-  }
-},);
-let tl5=gsap.timeline({
-  scrollTrigger:{
-      trigger:".sec",
-      start:"0%",
-      end:"80%",
-      scrub:1
-  }
-},);
-let tl6=gsap.timeline({
-  scrollTrigger:{
-      trigger:".sec",
-      start:"0%",
-      end:"70%",
-      scrub:1
-  }
-},);
-tl4.fromTo(".sq",{left:"70%"},{left:"100%",opacity:0,rotate:"360%"});
-tl5.fromTo(".sq1",{left:"80%"},{left:"107%",opacity:0,rotate:"360%"});
-tl6.fromTo(".sq2",{left:"86.5%"},{left:"110%",opacity:0,rotate:"360%"});
+const topRightSlider = document.querySelector('.top-right-slide');
+const middleRightSlider = document.querySelector('.middle-right-slide');
+const bottomRightSlider = document.querySelector('.bottom-right-slide');
 
+const eksOne = document.querySelector('.eks-one');
+const eksTwo = document.querySelector('.eks-two');
+const eksThree = document.querySelector('.eks-three');
 
+var isOpen = false;
 
-let tl3=gsap.timeline({
-  scrollTrigger:{
-      trigger:".sec1",
-      start:"0%",
-      end:"400%",
-      scrub:1,
-      pin:true,
-      pinSpacing:false
+menu.addEventListener('click', () => {
+  topLeftSlider.classList.toggle('top-left-slide-show');
+  bottomLeftSlider.classList.toggle('bottom-left-slide-show');
+  topRightSlider.classList.toggle('top-right-slide-show');
+  middleRightSlider.classList.toggle('middle-right-slide-show');
+  bottomRightSlider.classList.toggle('bottom-right-slide-show');
+  eksTwo.classList.toggle('eks-two-fade');
+  
+   const tl = gsap.timeline();
+   const tlEksThree = gsap.timeline();
+  
+  if(!isOpen) {
+    tl.to('.eks-one', {
+      y: isOpen? 0 : 9,
+    })
+      .to('.eks-one', {
+      rotate: isOpen? 0 : 45
+    })
+    
+    tlEksThree.to('.eks-three', {
+      y: isOpen? 0 : -9,
+    })
+      .to('.eks-three', {
+      rotate: isOpen? 0 : -45
+    })
   }
-},);
+  else {
+    tl.to('.eks-one', {
+      rotate: isOpen? 0 : 45,
+    })
+      .to('.eks-one', {
+      y: isOpen? 0 : 9,
+    })
+    
+    tlEksThree.to('.eks-three', {
+      rotate: isOpen? 0 : -45
+    })
+      .to('.eks-three', {
+      y: isOpen? 0 : -9
+    })
+  }
+  
+  isOpen = !isOpen
+})
+
+gsap.from('.simple', {
+  x: -100,
+  duration: 1
+})
+gsap.from('.menu', {
+  x: -100,
+  duration: 1.2,
+  delay: 0.3,
+  opacity: 0
+})
+gsap.from('.navi', {
+  y: -500,
+  duration: 2.,
+  delay: 0.4,
+  opacity: 0
+})

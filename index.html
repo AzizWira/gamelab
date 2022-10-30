@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.css">
-	<title>gamelab</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<div class="sq"></div>
-    <div class="sq1"></div>
-    <div class="sq2"></div>
-    <section class="sec1">
-        <nav class="nav">
-         <ul class="links">
-             <li>
-                 <a href="">Home</a>
-             </li>
-             <li>
-                <a href="">Products</a>
-             </li>
-             <li>
-                <a href="">Login</a>
-             </li>
-             <li class="dropdown">
-                <a href="">Account</a>
-                <div class="drop">
-                  <ul>
-                      <li><a href="">Cart</a></li>
-                      <li><a href="">Orders</a></li>
-                      <li><a href="">Logout</a></li>
-                  </ul>
-                </div>
-             </li>
-         </ul>
-        </nav>
-        <img class="logo" src="./logo_holytea.png" alt="">
-    </section>
-    <section class="sec2">
-        <div class="intro">
-            <h1>Rihanna</h1>
-            <p class="txt1">The way I dress depends on how I feel.</p>
-        </div>
-        <img src="./images/girlblack.jpg" alt="">
-        </section>
-        <section class="sec2">
-            <img src="./images/boy.jpg" alt="">    
-            <div class="intro">
-        <h1>Sam</h1>
-            <p class="txt1">Keep your outfit cool</p>
-        </div>
-        </section>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<!-- navbar -->
+	<div class="logo-brand">
+		<img class="brand-img" src="./logo_holytea.png" alt="">
+	</div>
+	<div class="top-right-slide">
+	<div class="inner-container-top">
+	<a href="#" class="nav-links">Home</a>
+	</div>
+	</div>
+	<div class="middle-right-slide">
+	<div class="inner-container-middle">
+		<a href="#" class="nav-links">About</a>
+	</div>
+	</div>
+	<div class="bottom-right-slide">
+	<div class="inner-container-bottom">
+		<a href="#" class="nav-links">Menu</a>
+	</div>
+	</div>
+
+	<div class="top-left-slide">
+	<div class="inner-container-left-top">
+		<a href="#" class="nav-links">Alamat</a>
+	</div>
+	</div>
+	<div class="bottom-left-slide">
+	<div class="inner-container-left-bottom">
+		<a href="#" class="nav-links">Kontak</a>
+	</div>
+	</div>
+
+	<div class="menu-btn">
+	<div class="eks-one"></div>
+	<div class="eks-two"></div>
+	<div class="eks-three"></div>
+	</div>
+
+	<img class="logo"><img src="./img/holyTea.png" alt=""></img>
+
+	<!-- navbar end -->
+
+	<!-- home page -->
+	<section id="home">
+		<div class="home-content">
+			<div class="home-title">
+				<h1 class="title-text">Minuman Teh <br>Murah, Enak Parah!</h1>
+				<p class="subtitle-text">#holyteaindonesia</p>
+			</div>
+			<img class="scroll-img" src="./arrow.png" alt="">
+			<div class="home-content-img">
+				<img class="img-content" src="./dsgn_holy_tea.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- home page end -->
+
+	<!-- script js -->
+	<script src="./js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 </body>
 </html>
