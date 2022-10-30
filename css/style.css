@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /* General styles */
 
@@ -115,7 +115,7 @@ ul li a i {
 }
 
 body {
-    /* background-color: #FDEFD7; */
+    /* margin: 0 75px; */
 }
 
 .navbar{
@@ -464,5 +464,44 @@ body {
 .nav-links:hover {
     letter-spacing: 5px;
     transform: translateY(0);
-    /* color:  */
 }
+
+/* intro */
+
+.intro{
+    display: flex;
+    background: url(../img/bg-intro.png);
+    background-size: cover;
+    padding: 200px 75px;
+    background-repeat: no-repeat;
+}
+
+.text-intro{
+    margin-right: 200px;
+    padding: 60px 0;
+    line-height: 52px;
+}
+
+.tittle-intro{
+    font-size: 55px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #2C911E;
+}
+
+.hastag-intro{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: Poppins;
+    padding-top: 13px;
+}
+
+.img-intro{
+    width: 369px;
+    height: 333px;
+}
+
+/* end intro */
+
+
+
