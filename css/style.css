@@ -1,55 +1,117 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Kanit:ital,wght@1,200&family=Lobster&family=Poppins&family=Roboto:wght@500;700&family=Staatliches&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
 }
 
 section{
 	height: 100vh;
 }
 
-/* new styling */
-.new{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+/* tabbar */
+#tabbar{
+	margin-top: 30px;
 }
 
-.new-img{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	position: relative;
+.btn{
+	padding: 10px 16px;
+	background-color: #fff;
+	border: none;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.708);
 }
 
-.new-img img{
-	width: 450px;
+.btn a{
+	list-style: none;
+	text-decoration: none;
+	color: black;
 }
 
-/* cursor animation */
-.cursor {
-	position: fixed;
+.active, .btn:hover{
+	background-color: #21963B;
+	border-radius:50px;
+	font-weight: 600;
+	color: white;
+}
+
+.title{
+	text-align: center;
+	color: #21963B;
+	font-weight: 700;
+	line-height: 100px;
+}
+
+.img-produk{
+	width: 350px;
+	height: auto;
+	padding: 0 20px;
+}
+
+.img-produk:hover{
+	transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+.selengkapnya{
+	margin:10px 190px;
+}
+
+.btn-selengkapnya{
+	border: none;
+	outline: none;
+	font-size: 20px;
+	background-color: white;
+	color: #21963B;
+}
+
+.img-arrow{
 	width: 25px;
-	height: 25px;
-	background-color: #21963a9f;
-	border-radius: 50%;
-	left: 0;
-	top: 0;
-	pointer-events: none;
-	transform: translate(-50%, -50%);
-	transition: 0.1s;
-  }
+	margin-left: 10px;
+}
 
-  .cursorInner {
+.selengkapnya:hover, .img-arrow:hover{
+	transform: translateX(5px);
+}
+
+/* progress-bar dan to top */
+.back-to-top {
 	position: fixed;
-	width: 20px;
-	height: 20px;
-	background-color: #21963a9f;
-	border-radius: 50%;
-	left: 0;
-	top: 0;
-	pointer-events: none;
-	transform: translate(-50%, -50%);
-	transition: 0.15s;
+	right: 2rem;
+	bottom: 2rem;
+	border-radius: 100%;
+	background: #21963B;
+	padding: 1rem;
+	border: none;
+	cursor: pointer;
+	opacity: 100%;
+	transition: opacity 0.5s;
   }
   
+  .back-to-top:hover {
+	opacity: 60%;
+  }
+  
+  .hidden {
+	opacity: 0%;
+  }
+  
+  .back-to-top-icon {
+	width: 1rem;
+	height: 1rem;
+	color: #ffffff;
+  }
+  
+  .progress-bar {
+	height: 0.5rem;
+	background: #21963B;
+	position: fixed;
+	border-radius: 50px;
+	top: 0;
+	left: 0;
+  }
