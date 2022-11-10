@@ -71,6 +71,37 @@ html {
   }
 }
 
+/* cursor animation */
+.cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background-color: #21963a9f;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+
+.cursorInner {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #21963a9f;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+}
+
+/*  */
+
+/*  universal */
+
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
   position: absolute;
@@ -396,6 +427,28 @@ html {
   height: 350px;
 }
 
+.desc-intro{
+  display: flex;
+  column-gap: 2rem;
+  color: #1A8532;
+}
+
+.desc-intro1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.desc-intro2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.sub-desc-intro{
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
 .scroll-img {
   width: 22px;
   padding-top: 20px;
@@ -417,6 +470,89 @@ html {
 }
 
 /* end intro */
+
+/* news */
+.news{
+  margin: 4rem 50px;
+}
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slick-slide img {
+  width: 663px;
+  height: 341px;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .news {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .news {
+    padding-top: 50px;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slick-slide img {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .news {
+    padding-top: 30px;
+  }
+
+  .slick-slide img {
+    width: 160px;
+  }
+}
+
+/*  */
 
 /* about */
 
