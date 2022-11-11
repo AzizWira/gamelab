@@ -11,6 +11,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.body {
+  margin: 0 50px;
+}
+
+.example {
+  overflow-y: scroll;
+  /* Tambahkan kemampuan untuk melakukan scrolling */
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -70,6 +83,48 @@ html {
     opacity: 1;
   }
 }
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: #21963B;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden-top {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: auto;
+  height: 2rem;
+  color: #ffffff;
+}
+
+/*  */
+
+/* progress bar */
+.progress-bar {
+  height: 0.5rem;
+  background: #21963B;
+  position: fixed;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+}
+
+/*  */
 
 /* cursor animation */
 .cursor {
@@ -399,7 +454,7 @@ html {
   display: flex;
   background: linear-gradient(0deg, rgba(188, 188, 188, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 0px 0px 100px 100px;
-  padding: 220px 160px 220px 120px;
+  padding: 190px 160px 130px 120px;
 }
 
 .text-intro {
@@ -427,23 +482,23 @@ html {
   height: 350px;
 }
 
-.desc-intro{
+.desc-intro {
   display: flex;
   column-gap: 2rem;
   color: #1A8532;
 }
 
-.desc-intro1{
+.desc-intro1 {
   font-size: 40px;
   font-weight: 600;
 }
 
-.desc-intro2{
+.desc-intro2 {
   font-size: 40px;
   font-weight: 600;
 }
 
-.sub-desc-intro{
+.sub-desc-intro {
   font-size: 20px;
   font-family: Poppins;
   font-weight: 400;
@@ -472,16 +527,16 @@ html {
 /* end intro */
 
 /* news */
-.news{
-  margin: 4rem 50px;
+.news {
+  margin: 4rem 0;
 }
+
 .slick-slide {
   margin: 0 20px;
 }
 
 .slick-slide img {
-  width: 663px;
-  height: 341px;
+  width: 100%;
 }
 
 .slick-slider {
@@ -538,7 +593,7 @@ html {
 
 @media only screen and (max-width: 500px) {
   .slick-slide img {
-    width: 180px;
+    width: 140px;
   }
 }
 
@@ -548,7 +603,7 @@ html {
   }
 
   .slick-slide img {
-    width: 160px;
+    width: 100px;
   }
 }
 
@@ -558,12 +613,12 @@ html {
 
 .about {
   display: flex;
-  padding: 70px 75px;
+  margin: 180px 25px;
 }
 
 .text-about {
   font-family: Poppins;
-  padding: 40px 0 0 90px;
+  padding: 20px 0 0 70px;
   line-height: 30px;
 }
 
@@ -587,7 +642,7 @@ html {
 
 /* best  */
 .container-best {
-  margin: 0 50px;
+  margin: 220px 0 0 0;
 }
 
 .tittle-best {
@@ -634,67 +689,89 @@ html {
 
 /*  */
 
-/* .card{
-  position: relative;
-  width: 450px;
-  height: auto;
-  background-color: #bb93fc;
-  color: #242329;
-  text-align: center;
-  border: 5px solid #fff;
-  overflow: hidden;
+/* menu */
+/* tabbar */
+.tabbar-menu {
+  margin-top: 130px;
 }
 
-.card-data{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(-250px);
-  transition: transform .5s;
-}
-
-.card-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .25s .35s;
-}
-
-.card-tittle{
-  font-size: 46px;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 5px;
-  background-color: #242329;
-  margin-top: 105px;
-}
-
-.card-description{
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.card-btn{
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px 10px;
-  color: #242329;
+.btn-menu {
+  padding: 10px 24px;
   background-color: #fff;
-  transition: background-color .25s;
+  border: none;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.708);
+  cursor: pointer;
 }
 
-.card-btn:hover{
-  background-color: #242329;
-  color: #fff;
+.btn-menu a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
-.card:hover .card-data{
-  transform: translateY(0px);
+.active-tabbar, .btn-menu:hover {
+  background-color: #21963B;
+  border-radius: 50px;
+  font-weight: 600;
+  color: white;
 }
 
-.card:hover .card-img{
-  transform: translateX(450px);
-  transition-delay: 0s;
-} */
+/* end tabbar */
+/* new */
+.menu{
+  margin: 0 50px;
+}
+
+.new{
+  margin: 105px 0;
+}
+
+.con-new {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 36px;
+}
+
+.tittle-new {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+}
+
+.img-new {
+  width: auto;
+  height: 490.33px;
+}
+/* end new */
+/* tea */
+.con-tea{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-top: 36px;
+}
+
+.con-tea1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.m30px{
+  margin-bottom: 30px;
+}
+
+.tittle-tea {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+}
+
+/* end tea */
+/* end menu */
