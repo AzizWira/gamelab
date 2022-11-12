@@ -44,24 +44,3 @@ document.addEventListener("scroll", () => {
 
 backToTopButton.addEventListener("click", goToTop);
 
-
-// card testimoni
-$('.testi')({
-  items: 2,
-  margin:10,
-  lazyLoad: true,
-  dots:true,
-  autoPlay: true,
-  autoPlayTimeout: 3000,
-  responsive:{
-    0:{
-      items:1,
-    },
-    600:{
-      items:2,
-    },
-    1000:{
-      items:4,
-    }
-  }
-});
