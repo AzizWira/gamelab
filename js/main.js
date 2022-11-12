@@ -9,7 +9,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-
+// progress bar and to top
 const showOnPx = 100;
 const backToTopButton = document.querySelector(".back-to-top");
 const pageProgressBar = document.querySelector(".progress-bar");
@@ -43,3 +43,25 @@ document.addEventListener("scroll", () => {
 });
 
 backToTopButton.addEventListener("click", goToTop);
+
+
+// card testimoni
+$('.testi')({
+  items: 2,
+  margin:10,
+  lazyLoad: true,
+  dots:true,
+  autoPlay: true,
+  autoPlayTimeout: 3000,
+  responsive:{
+    0:{
+      items:1,
+    },
+    600:{
+      items:2,
+    },
+    1000:{
+      items:4,
+    }
+  }
+});

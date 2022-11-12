@@ -1,6 +1,10 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Kanit:ital,wght@1,200&family=Lobster&family=Poppins&family=Roboto:wght@500;700&family=Staatliches&display=swap');
 
+/* bootstrap */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -13,6 +17,133 @@ body{
 section{
 	height: 100vh;
 }
+
+/* card testimoni */
+.card-testi {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	color: #9e9e9e;
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	margin: 35px 10px 10px;
+	max-width: 310px;
+	min-width: 250px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border-top: 5px solid #21963B;
+  }
+  
+  .card-testi *,
+  .card-testi *:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+  }
+  
+  .card-testi figcaption {
+	padding: 15% 10% 12%;
+  }
+  
+  .card-testi figcaption:before {
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: #21963B;
+	content: "\f10e";
+	font-family: 'FontAwesome';
+	font-size: 32px;
+	font-style: normal;
+	left: 50%;
+	line-height: 60px;
+	position: absolute;
+	top: -30px;
+	width: 60px;
+  }
+  
+  .card-testi h3 {
+	font-family: "Poppins", sans-serif;
+	color: #21963B;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 24px;
+	margin: 10px 0 13px;
+  }
+
+  .card-testi p{
+	font-family: "Poppins", sans-serif;
+  }
+
+  .testi{
+	position: relative;
+  }
+
+  .stars{
+	margin: 15px 0 0;
+	color: rgb(255, 234, 0);
+  }
+
+
+
+  /* maps */
+.maps{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.maps-kanan{
+	background-color: #DFDFDF;
+	color: #0000007c;
+	width: 450px;
+	height: 450px;
+}
+
+.lokasi{
+	display: flex;
+	padding: 25px;
+	margin-top: 10px;
+}
+
+.jam-buka{
+	display: flex;
+	padding: 25px;
+}
+
+.kontak{
+	display: flex;
+	padding: 25px;
+}
+
+.value{
+	margin-left: 25px;
+}
+
+
+
+/* best seller */
+.best-seller{
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1.2rem;
+	overflow-y: auto;
+	margin-bottom: 100px;
+}
+
+.img-best{
+	margin-top: 70px;
+	width: 290px;
+}
+
+
 
 /* tabbar */
 #tabbar{
@@ -59,7 +190,9 @@ section{
 }
 
 .selengkapnya{
-	margin:10px 190px;
+	margin:5px 180px;
+	cursor: pointer;
+	padding: 10px;
 }
 
 .btn-selengkapnya{
@@ -73,10 +206,20 @@ section{
 .img-arrow{
 	width: 25px;
 	margin-left: 10px;
+	animation: flutuar 2.5s linear infinite;
 }
 
-.selengkapnya:hover, .img-arrow:hover{
-	transform: translateX(5px);
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+.img-arrow:nth-child(2){
+    animation-delay: .2s;
 }
 
 /* progress-bar dan to top */
