@@ -774,4 +774,108 @@ html {
 }
 
 /* end tea */
+/* yakult */
+.con-yakult{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-top: 36px;
+}
+
+.con-yakult1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.m30px{
+  margin-bottom: 30px;
+}
+
+.tittle-yakult {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+}
+/* end yakult */
+/* milkshake */
+.con-milkshake{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-top: 36px;
+}
+
+.con-milkshake1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.m30px{
+  margin-bottom: 30px;
+}
+
+.tittle-milkshake {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+}
+/* end milkshake */
+/* coffe */
+.con-coffe{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-top: 36px;
+}
+
+.con-coffe1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.m30px{
+  margin-bottom: 30px;
+}
+
+.tittle-coffe {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+}
+/* end coffe */
+/* cheese */
+.con-cheese{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-top: 36px;
+}
+
+.con-cheese1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.m30px{
+  margin-bottom: 30px;
+}
+
+.tittle-cheese {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+}
+/* end cheese */
 /* end menu */
