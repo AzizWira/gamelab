@@ -145,6 +145,10 @@ var swiper = new Swiper('.mySwiper', {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
   },
 })
 // end funchion slider
