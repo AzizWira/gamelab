@@ -122,6 +122,7 @@ html {
   border-radius: 50px;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 
 /*  */
@@ -719,17 +720,18 @@ html {
 
 /* end tabbar */
 /* new */
-.menu{
+.menu {
   margin: 0 50px;
 }
 
-.new{
+.new {
   margin: 105px 0;
 }
 
 .con-new {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   gap: 50px;
   margin-top: 36px;
 }
@@ -742,26 +744,28 @@ html {
   color: #21963B;
 }
 
-.img-new {
-  width: auto;
-  height: 490.33px;
+.img-menu {
+  width: 100%;
+  height: auto;
 }
+
 /* end new */
 /* tea */
-.con-tea{
+.con-tea {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  justify-content: center;
+  /* column-gap: 50px; */
   margin-top: 36px;
 }
 
-.con-tea1{
+.con-tea1 {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  /* column-gap: 50px; */
 }
 
-.m30px{
+.m30px {
   margin-bottom: 30px;
 }
 
@@ -773,22 +777,33 @@ html {
   color: #21963B;
 }
 
+@media only screen and (max-width: 800px) {
+  .con-tea{
+    flex-direction: column;
+  }
+
+  .con-tea2 {
+    display: flex;
+  }
+}
+
 /* end tea */
 /* yakult */
-.con-yakult{
+.con-yakult {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  justify-content: center;
+  /* column-gap: 50px; */
   margin-top: 36px;
 }
 
-.con-yakult1{
+.con-yakult1 {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  /* column-gap: 50px; */
 }
 
-.m30px{
+.m30px {
   margin-bottom: 30px;
 }
 
@@ -799,22 +814,24 @@ html {
   font-size: 30px;
   color: #21963B;
 }
+
 /* end yakult */
 /* milkshake */
-.con-milkshake{
+.con-milkshake {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  justify-content: center;
+  /* column-gap: 50px; */
   margin-top: 36px;
 }
 
-.con-milkshake1{
+.con-milkshake1 {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  /* column-gap: 50px; */
 }
 
-.m30px{
+.m30px {
   margin-bottom: 30px;
 }
 
@@ -825,22 +842,24 @@ html {
   font-size: 30px;
   color: #21963B;
 }
+
 /* end milkshake */
 /* coffe */
-.con-coffe{
+.con-coffe {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  justify-content: center;
+  /* column-gap: 50px; */
   margin-top: 36px;
 }
 
-.con-coffe1{
+.con-coffe1 {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  /* column-gap: 50px; */
 }
 
-.m30px{
+.m30px {
   margin-bottom: 30px;
 }
 
@@ -851,22 +870,24 @@ html {
   font-size: 30px;
   color: #21963B;
 }
+
 /* end coffe */
 /* cheese */
-.con-cheese{
+.con-cheese {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  justify-content: center;
+  /* column-gap: 50px; */
   margin-top: 36px;
 }
 
-.con-cheese1{
+.con-cheese1 {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  /* column-gap: 50px; */
 }
 
-.m30px{
+.m30px {
   margin-bottom: 30px;
 }
 
@@ -877,29 +898,43 @@ html {
   font-size: 30px;
   color: #21963B;
 }
+
 /* end cheese */
 /* end menu */
 
 /* testimonial */
 /* === Google Font Import - Poppins === */
 .testimonial{
-  position: relative;  
+  margin: 220px 0 0 0;
+}
+
+.con-testimonial {
+  position: relative;
   height: auto;
   width: auto;
-  padding: 0 0px;
   display: flex;
   align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f2f2;
 }
 
-.swiper{
-  width: 950px;
+.tittle-testimonial {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+  text-align: center;
+  margin-bottom: 36px;
 }
 
-.card{
+.swiper {
+  width: auto;
+  height: auto;
+}
+
+.card {
   position: relative;
   background: #fff;
   border-radius: 20px;
@@ -907,7 +942,7 @@ html {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card::before{
+.card::before {
   content: "";
   position: absolute;
   height: 40%;
@@ -916,7 +951,7 @@ html {
   border-radius: 20px 20px 0 0;
 }
 
-.card .card-content{
+.card .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -925,7 +960,7 @@ html {
   z-index: 100;
 }
 
-.testimonial .card .image{
+.con-testimonial .card .image {
   height: 140px;
   width: 140px;
   border-radius: 50%;
@@ -933,7 +968,7 @@ html {
   background: #21963B;
 }
 
-.testimonial .card .image img{
+.con-testimonial .card .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -941,7 +976,7 @@ html {
   border: 3px solid #fff;
 }
 
-.card .media-icons{
+.card .media-icons {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -950,7 +985,7 @@ html {
   align-items: center;
 }
 
-.card .media-icons i{
+.card .media-icons i {
   color: #fff;
   opacity: 0.6;
   margin-top: 10px;
@@ -958,55 +993,55 @@ html {
   cursor: pointer;
 }
 
-.card .media-icons i:hover{
+.card .media-icons i:hover {
   opacity: 1;
 }
 
-.card .name-profession{
+.card .name-profession {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  margin-top: 10px;
-} 
 
-.name-profession .name{
+  margin-top: 10px;
+}
+
+.name-profession .name {
   font-size: 20px;
   font-weight: 600;
 }
 
-.name-profession .profession{
-  font-size:15px;
+.name-profession .profession {
+  font-size: 15px;
   font-weight: 500;
 }
 
-.name-profession .deskripsi{
+.name-profession .deskripsi {
   padding-top: 10px;
-  font-size:15px;
+  font-size: 15px;
   font-weight: 500;
   text-align: center;
 }
 
-.card .rating{
+.card .rating {
   display: flex;
   align-items: center;
   margin-top: 18px;
 }
 
-.card .rating i{
+.card .rating i {
   font-size: 18px;
   margin: 0 2px;
   color: #21963B;
 }
 
-.card .button{
+.card .button {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
 
-.card .button button{
+.card .button button {
   background: #7d2ae8;
   outline: none;
   border: none;
@@ -1018,28 +1053,30 @@ html {
   cursor: pointer;
 }
 
-.button button:hover{
+.button button:hover {
   background: #6616d0;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: absolute;
 }
 
-.swiper-pagination-bullet{
-  height: 7px;
-  width: 26px;
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 29px;
   border-radius: 25px;
   background: #7d2ae8;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next, .swiper-button-prev {
   opacity: 0.7;
   color: #7d2ae8;
   transition: all 0.3s ease;
 }
-.swiper-button-next:hover, .swiper-button-prev:hover{
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
   opacity: 1;
   color: #7d2ae8;
 }
+
 /* end testimonial */
