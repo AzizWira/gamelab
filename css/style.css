@@ -974,7 +974,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 50px;
+  column-gap: 50px;
   margin-top: 36px;
 }
 
@@ -991,6 +991,11 @@ html {
   height: auto;
 }
 
+@media screen and (max-width: 500px) {
+  .con-new {
+    column-gap: 10px;
+  }
+}
 /* end new */
 /* tea */
 .con-tea {
