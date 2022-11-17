@@ -16,6 +16,8 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body{
@@ -469,7 +471,7 @@ body{
   display: flex;
   background: linear-gradient(0deg, rgba(188, 188, 188, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 0px 0px 100px 100px;
-  padding: 190px 160px 130px 120px;
+  padding: 150px 160px 130px 120px;
 }
 
 .text-intro {
@@ -840,15 +842,16 @@ body{
 
 .body-about{
   padding: 7rem 0;
-  background: url(../img/bg-about.png);
+  background: url(https://drive.google.com/uc?export=view&id=1HaCNf3R_hfEmZwstKFyMcSYmSTr0XrFe);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .tittle-about {
   font-size: 30px;
   font-weight: 600;
-  color: #21963B;
+  color: #ffffff;
 }
 
 .gambar-about {
@@ -863,7 +866,7 @@ body{
 .desc-about {
   font-size: 20px;
   font-weight: 400;
-  color: #000000;
+  color: #ffffff;
   padding: 1.5rem 13rem 3rem 13rem;
 }
 
@@ -1009,10 +1012,13 @@ body{
 /* menu */
 
 .menu {
-  margin: 0 50px;
+  max-width: 1240px;
+  margin: 0 auto;
+  right: 50px;
+  left: 50px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .menu {
     margin: 0;
   }
@@ -1083,6 +1089,213 @@ body{
   }
 }
 /* end new */
+
+.title-product {
+  font-size: 3.5rem;
+  color: #1A8532;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 50px;
+}
+
+.card-product {
+  text-align: center;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  cursor: pointer;
+  content: normal;
+}
+
+.card-product img {
+  width: 100%;
+  height: auto;
+  transform: scale(.95);
+}
+
+.card-product:hover img {
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .products-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 20px;
+  }
+
+  .menu{
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .products-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+     /* gap: 10px; */
+  }
+
+  .body{
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .products-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+     /* gap: 10px; */
+  }
+
+  .menu{
+    margin: 0;
+  }
+}
+
+.card-product h3 {
+  padding: .5rem 0;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.card-product:hover h3 {
+  color: #27ae60;
+}
+
+.products-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-card {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+.preview-card.active-preview {
+  display: inline-block;
+}
+
+.preview-card img {
+  height: 30rem;
+}
+
+.fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 4rem;
+}
+
+.fa-times:hover {
+  transform: rotate(90deg);
+}
+
+.preview-card h3 {
+  color: #444;
+  padding: .5rem 0;
+  font-size: 2.5rem;
+}
+
+.stars {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.stars i {
+  color: #27ae60;
+}
+
+.preview-card p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.price {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #27ae60;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: .1rem solid #444;
+}
+
+.buttons a.buy:hover {
+  background: #444;
+  color: #fff;
+}
+
+
+@media (max-width:991px) {
+
+  html {
+     font-size: 55%;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .preview-card img {
+     height: 25rem;
+  }
+
+}
+
+#tea{
+  margin-top: 100px;
+}
+
+#yakult{
+  margin-top: 100px;
+}
+
+#coffee{
+  margin-top: 100px;
+}
+
+#milkshake{
+  margin-top: 100px;
+}
+
+#cheese{
+  margin-top: 100px;
+}
 /* end menu */
 
 /* testimonial */
