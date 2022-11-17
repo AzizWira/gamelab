@@ -3,16 +3,28 @@
 /* General styles */
 
 * {
-  margin: 0;
-  padding: 0;
+  font-family: Poppins;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body{
+  background: #eee;
+}
+
 .body {
   margin: 0 50px;
+  background: #eee;
 }
 
 .example {
@@ -36,15 +48,15 @@ html {
   transform: translateY(0);
 }
 
-.active.fade-bottom {
+.active-bottom.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
 
-.active.fade-left {
+.active-left.fade-left {
   animation: fade-left 1s ease-in;
 }
 
-.active.fade-right {
+.active-right.fade-right {
   animation: fade-right 1s ease-in;
 }
 
@@ -821,30 +833,120 @@ html {
 /* about */
 
 .about {
-  display: flex;
-  margin: 180px 25px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
 }
 
-.text-about {
-  font-family: Poppins;
-  padding: 20px 0 0 70px;
-  line-height: 30px;
+.body-about{
+  padding: 7rem 0;
+  background: url(../img/bg-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tittle-about {
-  font-size: 25px;
-  font-weight: 700;
-  padding-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #21963B;
 }
 
-.txt-about {
-  font-size: 20px;
-  font-weight: 500;
+.gambar-about {
+  margin-top: 50px;
 }
 
 .img-about {
-  width: 553.05px;
-  height: 460px;
+  width: 15%;
+  height: auto;
+}
+
+.desc-about {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  padding: 1.5rem 13rem 3rem 13rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .desc-about {
+    padding: 1rem 9rem 3rem 9rem;
+  }
+
+  .img-about {
+    width: 20%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .desc-about {
+    padding: 1rem 7rem 3rem 7rem;
+  }
+
+  .img-about {
+    width: 22%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gambar-about {
+    margin-top: 30px;
+  }
+
+  .desc-about {
+    font-size: 18px;
+    padding: 1rem 3rem;
+  }
+
+  .img-about {
+    width: 24%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .img-about {
+    width: 30%;
+    height: auto;
+  }
+
+  .desc-about {
+    font-size: 16px;
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gambar-about {
+    margin-top: 20px;
+  }
+
+  .img-about {
+    width: 40%;
+    height: auto;
+  }
+
+  .desc-about {
+    font-size: 14px;
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gambar-about {
+    margin-top: 10px;
+  }
+
+  .img-about {
+    width: 50%;
+    height: auto;
+  }
+
+  .desc-about {
+    font-size: 13px;
+    padding: 1rem 0.5rem;
+  }
 }
 
 /*  */
@@ -910,25 +1012,9 @@ html {
   margin: 0 50px;
 }
 
-.m30px {
-  margin-bottom: 30px;
-}
-
-.jarak{
-  margin-bottom: 30px;
-}
-
 @media only screen and (max-width: 500px) {
-  .jarak{
-    margin-bottom: 0;
-  }
-
   .menu {
     margin: 0;
-  }
-
-  .m30px {
-    margin-bottom: 10px;
   }
 
   .body{
@@ -943,7 +1029,7 @@ html {
 
 .btn-menu {
   padding: 10px 24px;
-  background-color: #fff;
+  background-color: #ffffff00;
   border: none;
   font-size: 25px;
   color: rgba(0, 0, 0, 0.708);
@@ -1177,3 +1263,50 @@ html {
 }
 
 /* end testimonial */
+
+/* maps */
+
+/* maps */
+.maps{
+	display: flex;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.maps-kanan{
+	background-color: #DFDFDF;
+	color: #0000007c;
+	width: 450px;
+	height: 455px;
+}
+
+.lokasi{
+	display: flex;
+	padding: 25px;
+	margin-top: 10px;
+}
+.jam-buka{
+	display: flex;
+	padding: 25px;
+}
+.kontak{
+	display: flex;
+	padding: 25px;
+}
+.value-lokasi, .value-jam, .value-kontak{
+	margin-left: 25px;
+}
+
+/* end maps */
