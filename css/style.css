@@ -470,7 +470,7 @@ body {
 .intro {
   display: flex;
   background: linear-gradient(0deg, rgba(188, 188, 188, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-  border-radius: 0px 0px 100px 100px;
+  border-radius: none;
   padding: 150px 160px 130px 120px;
 }
 
@@ -842,11 +842,17 @@ body {
 }
 
 .body-about {
-  padding: 7rem 0;
+  padding: 9rem 0 0 0;
   background: url(https://drive.google.com/uc?export=view&id=1HaCNf3R_hfEmZwstKFyMcSYmSTr0XrFe);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed
+}
+
+.test-about{
+position: relative;
+margin-bottom: -5px;
 }
 
 .tittle-about {
