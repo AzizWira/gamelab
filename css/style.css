@@ -101,8 +101,8 @@ body {
 /* back to top */
 .back-to-top {
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
+  right: 4rem;
+  bottom: 4rem;
   border-radius: 100%;
   background: #21963B;
   padding: 1rem;
@@ -122,7 +122,7 @@ body {
 
 .back-to-top-icon {
   width: auto;
-  height: 2rem;
+  height: 4rem;
   color: #ffffff;
 }
 
@@ -874,12 +874,12 @@ margin-bottom: -5px;
   font-size: 20px;
   font-weight: 400;
   color: #ffffff;
-  padding: 1.5rem 13rem 3rem 13rem;
+  padding: 1.5rem 13rem 15rem 13rem;
 }
 
 @media only screen and (max-width: 1300px) {
   .desc-about {
-    padding: 1rem 9rem 3rem 9rem;
+    padding: 1rem 9rem 13rem 9rem;
   }
 
   .img-about {
@@ -890,7 +890,7 @@ margin-bottom: -5px;
 
 @media only screen and (max-width: 1175px) {
   .desc-about {
-    padding: 1rem 7rem 3rem 7rem;
+    padding: 1rem 7rem 10rem 7rem;
   }
 
   .img-about {
@@ -906,7 +906,7 @@ margin-bottom: -5px;
 
   .desc-about {
     font-size: 18px;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 9rem 3rem;
   }
 
   .img-about {
@@ -923,7 +923,7 @@ margin-bottom: -5px;
 
   .desc-about {
     font-size: 16px;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 7rem 2rem;
   }
 }
 
@@ -939,7 +939,7 @@ margin-bottom: -5px;
 
   .desc-about {
     font-size: 14px;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 7rem 1rem;
   }
 }
 
@@ -955,7 +955,7 @@ margin-bottom: -5px;
 
   .desc-about {
     font-size: 13px;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 5rem 0.5rem;
   }
 }
 
