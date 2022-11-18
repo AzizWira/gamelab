@@ -29,6 +29,19 @@
   </head>
 
   <body class="example">
+  <div class="loading" id="loading">
+    <div class="wrapper-loading">
+      <div class="circle-loading"></div>
+      <div class="circle-loading"></div>
+      <div class="circle-loading"></div>
+      <div class="shadow-loading"></div>
+      <div class="shadow-loading"></div>
+      <div class="shadow-loading"></div>
+      <span>Sabar Mas Broo...</span>
+    </div>
+  </div>
+    
+    
     <a href="#" class="logo" target="_blank">
       <img
         src="https://drive.google.com/uc?export=view&id=1KAhrdmbD3r05XfujnPg6Dw4r0BndB2s-"
@@ -49,10 +62,10 @@
 
     <div class="intro" id="intro">
       <div class="text-intro">
-        <h1 class="tittle-intro" style=" color: #2c911e">
+        <h1 class="tittle-intro" style="color: #2c911e">
           Minuman Teh
-          <span style="font-weight: 600;">Terjangkau</span>,
-          Dijamin <span style="font-weight: 600;">Seger!</span>
+          <span style="font-weight: 600">Terjangkau</span>, Dijamin
+          <span style="font-weight: 600">Seger!</span>
         </h1>
         <p class="hastag-intro">#HOLYTEAINDONESIA</p>
         <a href="#about">
@@ -107,8 +120,8 @@
     <!-- about -->
     <div class="body-about" id="about">
       <div class="about">
-        <h1 class="tittle-about  reveal fade-left">Tentang Kami</h1>
-        <div class="gambar-about  reveal fade-right">
+        <h1 class="tittle-about reveal fade-left">Tentang Kami</h1>
+        <div class="gambar-about reveal fade-right">
           <img
             src="https://drive.google.com/uc?export=view&id=1gTBr1nJhVqPVYp0YtG53fIpvLwqRULXB"
             alt=""
@@ -129,25 +142,97 @@
           Memiliki beberapa best seller. info lebih lanjut silahkan scroll ke
           bawah ini.
         </p>
-        <svg class="test-about" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(238, 238, 238, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,50L11.4,55C22.9,60,46,70,69,76.7C91.4,83,114,87,137,80C160,73,183,57,206,55C228.6,53,251,67,274,66.7C297.1,67,320,53,343,51.7C365.7,50,389,60,411,60C434.3,60,457,50,480,43.3C502.9,37,526,33,549,28.3C571.4,23,594,17,617,18.3C640,20,663,30,686,28.3C708.6,27,731,13,754,20C777.1,27,800,53,823,55C845.7,57,869,33,891,25C914.3,17,937,23,960,35C982.9,47,1006,63,1029,70C1051.4,77,1074,73,1097,75C1120,77,1143,83,1166,80C1188.6,77,1211,63,1234,61.7C1257.1,60,1280,70,1303,63.3C1325.7,57,1349,33,1371,23.3C1394.3,13,1417,17,1440,18.3C1462.9,20,1486,20,1509,26.7C1531.4,33,1554,47,1577,48.3C1600,50,1623,40,1634,35L1645.7,30L1645.7,100L1634.3,100C1622.9,100,1600,100,1577,100C1554.3,100,1531,100,1509,100C1485.7,100,1463,100,1440,100C1417.1,100,1394,100,1371,100C1348.6,100,1326,100,1303,100C1280,100,1257,100,1234,100C1211.4,100,1189,100,1166,100C1142.9,100,1120,100,1097,100C1074.3,100,1051,100,1029,100C1005.7,100,983,100,960,100C937.1,100,914,100,891,100C868.6,100,846,100,823,100C800,100,777,100,754,100C731.4,100,709,100,686,100C662.9,100,640,100,617,100C594.3,100,571,100,549,100C525.7,100,503,100,480,100C457.1,100,434,100,411,100C388.6,100,366,100,343,100C320,100,297,100,274,100C251.4,100,229,100,206,100C182.9,100,160,100,137,100C114.3,100,91,100,69,100C45.7,100,23,100,11,100L0,100Z"></path></svg>
+        <svg
+          class="test-about"
+          id="wave"
+          style="transform: rotate(0deg); transition: 0.3s"
+          viewBox="0 0 1440 100"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="rgba(238, 238, 238, 1)" offset="0%"></stop>
+              <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style="transform: translate(0, 0px); opacity: 1"
+            fill="url(#sw-gradient-0)"
+            d="M0,50L11.4,55C22.9,60,46,70,69,76.7C91.4,83,114,87,137,80C160,73,183,57,206,55C228.6,53,251,67,274,66.7C297.1,67,320,53,343,51.7C365.7,50,389,60,411,60C434.3,60,457,50,480,43.3C502.9,37,526,33,549,28.3C571.4,23,594,17,617,18.3C640,20,663,30,686,28.3C708.6,27,731,13,754,20C777.1,27,800,53,823,55C845.7,57,869,33,891,25C914.3,17,937,23,960,35C982.9,47,1006,63,1029,70C1051.4,77,1074,73,1097,75C1120,77,1143,83,1166,80C1188.6,77,1211,63,1234,61.7C1257.1,60,1280,70,1303,63.3C1325.7,57,1349,33,1371,23.3C1394.3,13,1417,17,1440,18.3C1462.9,20,1486,20,1509,26.7C1531.4,33,1554,47,1577,48.3C1600,50,1623,40,1634,35L1645.7,30L1645.7,100L1634.3,100C1622.9,100,1600,100,1577,100C1554.3,100,1531,100,1509,100C1485.7,100,1463,100,1440,100C1417.1,100,1394,100,1371,100C1348.6,100,1326,100,1303,100C1280,100,1257,100,1234,100C1211.4,100,1189,100,1166,100C1142.9,100,1120,100,1097,100C1074.3,100,1051,100,1029,100C1005.7,100,983,100,960,100C937.1,100,914,100,891,100C868.6,100,846,100,823,100C800,100,777,100,754,100C731.4,100,709,100,686,100C662.9,100,640,100,617,100C594.3,100,571,100,549,100C525.7,100,503,100,480,100C457.1,100,434,100,411,100C388.6,100,366,100,343,100C320,100,297,100,274,100C251.4,100,229,100,206,100C182.9,100,160,100,137,100C114.3,100,91,100,69,100C45.7,100,23,100,11,100L0,100Z"
+          ></path>
+        </svg>
       </div>
     </div>
     <!-- end about -->
     <div class="body">
+      <div class="container-best" id="best">
+        <h1 class="tittle-best">BEST SELLER MENU</h1>
+        <div class="con-img-best">
+          <div class="best-left">
+            <div class="left-1">
+               <!-- best seller besar -->
+              <!-- best seller besar -->
+              <img
+                src="https://drive.google.com/uc?export=view&id=1y0Fy-pLYVmtPO47i7fY-Swo3DCO7VgaW"
+                alt=""
+                class="img-left1 reveal fade-bottom"
+              />
+            </div>
+            <div class="left-2">
+              <div>
+                <!-- best pure lemon -->
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1M-JMdlf8L2W19A2tfVWDE3hwZiRIrnJE"
+                  alt=""
+                  class="img-best best-top reveal fade-bottom"
+                />
+              </div>
+              <!-- best matcha -->
+              <div><img src="https://drive.google.com/uc?export=view&id=19vKEdIkivUgQmJ8OlIxG0ggqATcLqgJ7" alt="" class="img-best reveal fade-bottom" /></div>
+            </div>
+          </div>
+          <div class="best-right">
+            <div class="right-1">
+              <div>
+                <!-- best strawberry tea -->
+                <img src="https://drive.google.com/uc?export=view&id=10NphUGh3uyMhTCLSm4lkx6SJX_J3M8DM" alt="" class="img-best best-top reveal fade-bottom2" />
+              </div>
+              <!-- best dark choco -->
+              <div><img src="https://drive.google.com/uc?export=view&id=1u0T3jAiUipFYqSOp6o5ms2hASz-f4WPY" alt="" class="img-best reveal fade-bottom2" /></div>
+            </div>
+            <div class="right-2">
+              <div>
+                <!-- best manggo yakult -->
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1N40VKgqHxMBEg7vAHuZq_NA8fmriIWq1"
+                  alt=""
+                  class="img-best best-top reveal fade-bottom3"
+                />
+              </div>
+              <!-- best tiramisu -->
+              <div><img src="https://drive.google.com/uc?export=view&id=19DleWt2jDV4UZkpn6wqyYysnH3hiGF29" alt="" class="img-best reveal fade-bottom3" /></div>
+            </div>
+          </div>
+        </div>
+        <!--end con-img-best -->
+      </div>
+      <!--end container-best -->
+
       <!-- menu -->
       <!-- tabbar -->
       <div class="menu">
         <div id="tabbar-menu" align="center">
-          <button class="btn-menu active-tabbar">All</button>
-          <button class="btn-menu">Tea</button>
-          <button class="btn-menu">Yakult</button>
-          <button class="btn-menu">Milkshake</button>
-          <button class="btn-menu">Coffee</button>
-          <button class="btn-menu">Cheese</button>
+          <button class="btn-menu active-tabbar" id="btn-all">All</button>
+          <button class="btn-menu" id="btn-tea">Tea</button>
+          <button class="btn-menu" id="btn-yakult">Yakult</button>
+          <button class="btn-menu" id="btn-milkshake">Milkshake</button>
+          <button class="btn-menu" id="btn-coffee">Coffee</button>
+          <button class="btn-menu" id="btn-cheese">Cheese</button>
         </div>
         <!-- end tabbar -->
 
-        <div class="new">
+        <div class="new" id="new-series">
           <h1 class="tittle-new">NEW SERIES</h1>
           <div class="con-new">
             <div>
@@ -169,10 +254,10 @@
         <!-- end new -->
 
         <!-- tea -->
-        <div class="tea reveal fade-bottom" id="tea">
-          <h3 class="title-product">AUTHENTIC TEA SERIES</h3>
+        <div class="tea" id="tea">
+          <h3 class="title-product reveal fade-bottom">AUTHENTIC TEA SERIES</h3>
           <div class="products-container">
-            <div class="card-product" data-name="tea-1">
+            <div class="card-product reveal fade-bottom" data-name="tea-1">
               <img
                 src="https://drive.google.com/uc?export=view&id=17gKofP9iGtX3QfxYXQ-nFMusSXl5p5Gw"
                 alt=""
@@ -181,7 +266,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="tea-2">
+            <div class="card-product reveal fade-bottom2" data-name="tea-2">
               <img
                 src="https://drive.google.com/uc?export=view&id=1-85YJ5PENBQHYs2IMho718cE6jK1Qj4w"
                 alt=""
@@ -190,7 +275,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="tea-3">
+            <div class="card-product reveal fade-bottom3" data-name="tea-3">
               <img
                 src="https://drive.google.com/uc?export=view&id=1VWAG0AN-8xR2XnCPWuZDtZAbWFpjQDay"
                 alt=""
@@ -199,7 +284,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="tea-4">
+            <div class="card-product reveal fade-bottom" data-name="tea-4">
               <img
                 src="https://drive.google.com/uc?export=view&id=1wPV49vtWxOmOlL7c7o50Lg7A2_pJ-sao"
                 alt=""
@@ -208,7 +293,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="tea-5">
+            <div class="card-product reveal fade-bottom2" data-name="tea-5">
               <img
                 src="https://drive.google.com/uc?export=view&id=1ZkemL8rRDrdjO0LYYK4A7L5N9W3zOC-v"
                 alt=""
@@ -217,7 +302,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="tea-6">
+            <div class="card-product reveal fade-bottom3" data-name="tea-6">
               <img
                 src="https://drive.google.com/uc?export=view&id=1mr-pt0VMBXtS53QifPTc6x6lc4l9jUkZ"
                 alt=""
@@ -231,10 +316,10 @@
         <!-- end tea -->
 
         <!-- yakult -->
-        <div class="yakult reveal fade-bottom" id="yakult">
-          <h3 class="title-product">YAKULT SERIES</h3>
+        <div class="yakult" id="yakult">
+          <h3 class="title-product reveal fade-bottom">YAKULT SERIES</h3>
           <div class="products-container">
-            <div class="card-product" data-name="yakult-1">
+            <div class="card-product reveal fade-bottom" data-name="yakult-1">
               <img
                 src="https://drive.google.com/uc?export=view&id=1uw1cMjNX8B7UJZUIyX_wtbWgytAqU7Z3"
                 alt=""
@@ -243,7 +328,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="yakult-2">
+            <div class="card-product reveal fade-bottom2" data-name="yakult-2">
               <img
                 src="https://drive.google.com/uc?export=view&id=1oCmsuJ8Zc4NsdB4FxnxqybEYi3hegkPX"
                 alt=""
@@ -252,7 +337,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="yakult-3">
+            <div class="card-product reveal fade-bottom3" data-name="yakult-3">
               <img
                 src="https://drive.google.com/uc?export=view&id=124LM7SfuruvM291DWCwGzUDEbb2_0lsu"
                 alt=""
@@ -261,7 +346,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="yakult-4">
+            <div class="card-product reveal fade-bottom" data-name="yakult-4">
               <img
                 src="https://drive.google.com/uc?export=view&id=10WaGmfUuv4bjgC5R9AVm37CEdGTRCT8a"
                 alt=""
@@ -270,7 +355,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="yakult-5">
+            <div class="card-product reveal fade-bottom2" data-name="yakult-5">
               <img
                 src="https://drive.google.com/uc?export=view&id=13Hg4VWaPREJS65WAUSxFlPBj-8VyKTFr"
                 alt=""
@@ -279,7 +364,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="yakult-6">
+            <div class="card-product reveal fade-bottom3" data-name="yakult-6">
               <img
                 src="https://drive.google.com/uc?export=view&id=14-KpgqaaXpIqcZXBlNsUuWZYQ--VnK8s"
                 alt=""
@@ -293,10 +378,10 @@
         <!-- end yakult -->
 
         <!-- milkshake -->
-        <div class="milkshake reveal fade-bottom" id="milkshake">
-          <h3 class="title-product">MILKSHAKE SERIES</h3>
+        <div class="milkshake" id="milkshake">
+          <h3 class="title-product reveal fade-bottom">MILKSHAKE SERIES</h3>
           <div class="products-container">
-            <div class="card-product" data-name="milkshake-1">
+            <div class="card-product reveal fade-bottom" data-name="milkshake-1">
               <img
                 src="https://drive.google.com/uc?export=view&id=1aK6r9Nm7N2r5R6_7nbkBm1vbv4aryYo4"
                 alt=""
@@ -305,7 +390,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="milkshake-2">
+            <div class="card-product reveal fade-bottom2" data-name="milkshake-2">
               <img
                 src="https://drive.google.com/uc?export=view&id=1BwFJia2scC6a281m8DHZEJtGAJvk6EHn"
                 alt=""
@@ -314,7 +399,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="milkshake-3">
+            <div class="card-product reveal fade-bottom3" data-name="milkshake-3">
               <img
                 src="https://drive.google.com/uc?export=view&id=1tU1yZi5xunM26Jl6r7V1WxX_jhfsPw40"
                 alt=""
@@ -323,7 +408,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="milkshake-4">
+            <div class="card-product reveal fade-bottom" data-name="milkshake-4">
               <img
                 src="https://drive.google.com/uc?export=view&id=1eIVD3ABlqo4RSK00sViFQhaifleOZRwt"
                 alt=""
@@ -332,7 +417,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="milkshake-5">
+            <div class="card-product reveal fade-bottom2" data-name="milkshake-5">
               <img
                 src="https://drive.google.com/uc?export=view&id=1Pi4B9ytRlMkh-jgw8qsixoaYr9OMa5Jh"
                 alt=""
@@ -341,7 +426,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="milkshake-6">
+            <div class="card-product reveal fade-bottom3" data-name="milkshake-6">
               <img
                 src="https://drive.google.com/uc?export=view&id=1_ZR3wpdpJlU9T98LpViBpW7sVienC23X"
                 alt=""
@@ -350,7 +435,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="milkshake-7">
+            <div class="card-product reveal fade-bottom" data-name="milkshake-7">
               <img
                 src="https://drive.google.com/uc?export=view&id=1qCIw4UrsTMEYG2oUbaLijaXb8TYc5q2a"
                 alt=""
@@ -364,10 +449,10 @@
         <!-- end milkshake -->
 
         <!-- coffe -->
-        <div class="coffee reveal fade-bottom" id="coffee">
-          <h3 class="title-product">COFFEE SERIES</h3>
+        <div class="coffee" id="coffee">
+          <h3 class="title-product reveal fade-bottom">COFFEE SERIES</h3>
           <div class="products-container">
-            <div class="card-product" data-name="coffee-1">
+            <div class="card-product reveal fade-bottom" data-name="coffee-1">
               <img
                 src="https://drive.google.com/uc?export=view&id=1KVXa54auYtrxXcxw2BVC15nwCraBkvv5"
                 alt=""
@@ -376,7 +461,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="coffee-2">
+            <div class="card-product reveal fade-bottom2" data-name="coffee-2">
               <img
                 src="https://drive.google.com/uc?export=view&id=1DCm8iBON3kUJjE8I4rdI1ujbc-2b-Mep"
                 alt=""
@@ -385,7 +470,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="coffee-3">
+            <div class="card-product reveal fade-bottom3" data-name="coffee-3">
               <img
                 src="https://drive.google.com/uc?export=view&id=1geOV-UXVMSLvDIN611ktmncK3XNHYEVe"
                 alt=""
@@ -399,10 +484,10 @@
         <!-- end coffe -->
 
         <!-- cheese -->
-        <div class="cheese reveal fade-bottom" id="cheese">
-          <h3 class="title-product">CHEESE CREAM SERIES</h3>
+        <div class="cheese" id="cheese">
+          <h3 class="title-product reveal fade-bottom">CHEESE CREAM SERIES</h3>
           <div class="products-container">
-            <div class="card-product" data-name="cheese-1">
+            <div class="card-product reveal fade-bottom" data-name="cheese-1">
               <img
                 src="https://drive.google.com/uc?export=view&id=15r3j6R_joBzznOaUbyOfegp6IRXJswPl"
                 alt=""
@@ -411,7 +496,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="cheese-2">
+            <div class="card-product reveal fade-bottom2" data-name="cheese-2">
               <img
                 src="https://drive.google.com/uc?export=view&id=1wvbbPdZKVQO06PbUMmgyReoUAgw9J3KF"
                 alt=""
@@ -420,7 +505,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="cheese-3">
+            <div class="card-product reveal fade-bottom3" data-name="cheese-3">
               <img
                 src="https://drive.google.com/uc?export=view&id=11o5aIN0LFF3uZvJboPNrkhR02zVOYobG"
                 alt=""
@@ -429,7 +514,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="cheese-4">
+            <div class="card-product reveal fade-bottom" data-name="cheese-4">
               <img
                 src="https://drive.google.com/uc?export=view&id=1x8-8yl694HsKljamkt_JJzl-Mhog6rMV"
                 alt=""
@@ -438,7 +523,7 @@
               <h3>Pesan Sekarang</h3>
             </div>
 
-            <div class="card-product" data-name="cheese-5">
+            <div class="card-product reveal fade-bottom2" data-name="cheese-5">
               <img
                 src="https://drive.google.com/uc?export=view&id=1CnfKluK2_uW8u7J87JtyFEGull3SuNQU"
                 alt=""
@@ -446,7 +531,6 @@
               />
               <h3>Pesan Sekarang</h3>
             </div>
-
           </div>
         </div>
 
@@ -472,14 +556,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari beberapa jenis teh pilihan yang berbeda. Yang di racik dan direbus dengan air panas dan tambahan bahan"
-            pelengkap lainnya seperti gula cair dan es batu kristal dan siap di sajikan.
+            Kombinasi dari beberapa jenis teh pilihan yang berbeda. Yang di
+            racik dan direbus dengan air panas dan tambahan bahan" pelengkap
+            lainnya seperti gula cair dan es batu kristal dan siap di sajikan.
           </p>
           <div class="price">Rp3.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -499,13 +584,14 @@
           </div>
           <p>
             Kombinasi dari original tea made holy tea dengan tambahan syrup
-            perasa lychee dan bahan pelengkap lain yang pastinya bikin seger di minum waktu cuaca terik.
+            perasa lychee dan bahan pelengkap lain yang pastinya bikin seger di
+            minum waktu cuaca terik.
           </p>
           <div class="price">Rp5.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -525,13 +611,14 @@
           </div>
           <p>
             Kombinasi dari original tea made holy tea dengan tambahan syrup
-            perasa markisa dan bahan pelengkap lain yang pastinya bikin seger di minum waktu cuaca terik.
+            perasa markisa dan bahan pelengkap lain yang pastinya bikin seger di
+            minum waktu cuaca terik.
           </p>
           <div class="price">Rp5.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -550,14 +637,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari original tea made holy tea dengan tambahan
-            syrup perasa strawbbery dan bahan pelengkap lain yang pastinya bikin seger di minum waktu cuaca terik.
+            Kombinasi dari original tea made holy tea dengan tambahan syrup
+            perasa strawbbery dan bahan pelengkap lain yang pastinya bikin seger
+            di minum waktu cuaca terik.
           </p>
           <div class="price">Rp5.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -576,14 +664,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari original tea made holy tea dengan tambahan
-            syrup perasa lemon dan bahan pelengkap lain yang pastinya bikin tenggorokan.
+            Kombinasi dari original tea made holy tea dengan tambahan syrup
+            perasa lemon dan bahan pelengkap lain yang pastinya bikin
+            tenggorokan.
           </p>
           <div class="price">Rp5.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -602,13 +691,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari original tea made holy tea dengan tambahan potongan lemon buah segar.
+            Kombinasi dari original tea made holy tea dengan tambahan potongan
+            lemon buah segar.
           </p>
           <div class="price">Rp7.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -631,14 +721,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Minuman kaya akan manfaat dengan basic yakult segar yang di kombinasikan
-            dengan syrup buah"an dan krimer yang bikin hari - harimu selalu fresh dan good mod.
+            Minuman kaya akan manfaat dengan basic yakult segar yang di
+            kombinasikan dengan syrup buah"an dan krimer yang bikin hari -
+            harimu selalu fresh dan good mod.
           </p>
           <div class="price">Rp8.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -657,14 +748,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Minuman kaya akan manfaat dengan basic yakult segar yang di kombinasikan
-            dengan syrup buah"an dan krimer yang bikin hari - harimu selalu fresh dan good mod.
+            Minuman kaya akan manfaat dengan basic yakult segar yang di
+            kombinasikan dengan syrup buah"an dan krimer yang bikin hari -
+            harimu selalu fresh dan good mod.
           </p>
           <div class="price">Rp8.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -683,14 +775,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Minuman kaya akan manfaat dengan basic yakult segar yang di kombinasikan
-            dengan syrup buah"an dan krimer yang bikin hari - harimu selalu fresh dan good mod.
+            Minuman kaya akan manfaat dengan basic yakult segar yang di
+            kombinasikan dengan syrup buah"an dan krimer yang bikin hari -
+            harimu selalu fresh dan good mod.
           </p>
           <div class="price">Rp8.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -709,14 +802,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Minuman kaya akan manfaat dengan basic yakult segar yang di kombinasikan
-            dengan syrup buah"an dan krimer yang bikin hari - harimu selalu fresh dan good mod.
+            Minuman kaya akan manfaat dengan basic yakult segar yang di
+            kombinasikan dengan syrup buah"an dan krimer yang bikin hari -
+            harimu selalu fresh dan good mod.
           </p>
           <div class="price">Rp8.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -735,14 +829,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Minuman kaya akan manfaat dengan basic yakult segar yang di kombinasikan
-            dengan syrup buah"an dan krimer yang bikin hari - harimu selalu fresh dan good mod.
+            Minuman kaya akan manfaat dengan basic yakult segar yang di
+            kombinasikan dengan syrup buah"an dan krimer yang bikin hari -
+            harimu selalu fresh dan good mod.
           </p>
           <div class="price">Rp8.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -761,14 +856,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Minuman kaya akan manfaat dengan basic yakult segar yang di kombinasikan
-            dengan syrup buah"an dan krimer yang bikin hari - harimu selalu fresh dan good mod.
+            Minuman kaya akan manfaat dengan basic yakult segar yang di
+            kombinasikan dengan syrup buah"an dan krimer yang bikin hari -
+            harimu selalu fresh dan good mod.
           </p>
           <div class="price">Rp8.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -791,14 +887,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -817,14 +913,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -843,14 +939,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -869,14 +965,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -895,14 +991,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -921,14 +1017,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -947,14 +1043,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa yang bikin hari - harimu
-            lebih berwarna.
+            Kombinasi dari susu berkualitas yang dishake dengan bubuk perasa
+            yang bikin hari - harimu lebih berwarna.
           </p>
           <div class="price">Rp10.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -977,14 +1073,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari kopi pilihan dipadukan dengan es
-            batu kristal yang akan bikin hari - harimu lebih santai.
+            Kombinasi dari kopi pilihan dipadukan dengan es batu kristal yang
+            akan bikin hari - harimu lebih santai.
           </p>
           <div class="price">Rp13.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1003,14 +1099,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari kopi pilihan dipadukan dengan es
-            batu kristal yang akan bikin hari - harimu lebih santai.
+            Kombinasi dari kopi pilihan dipadukan dengan es batu kristal yang
+            akan bikin hari - harimu lebih santai.
           </p>
           <div class="price">Rp13.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1029,14 +1125,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi dari kopi pilihan dipadukan dengan es
-            batu kristal yang akan bikin hari - harimu lebih santai.
+            Kombinasi dari kopi pilihan dipadukan dengan es batu kristal yang
+            akan bikin hari - harimu lebih santai.
           </p>
           <div class="price">Rp13.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1059,14 +1155,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-           Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan dipadukan
-           dengan cheese cream yang premium.
+            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan
+            dipadukan dengan cheese cream yang premium.
           </p>
           <div class="price">Rp16.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1085,14 +1181,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan dipadukan
-           dengan cheese cream yang premium.
+            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan
+            dipadukan dengan cheese cream yang premium.
           </p>
           <div class="price">Rp16.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1111,14 +1207,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan dipadukan
-           dengan cheese cream yang premium.
+            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan
+            dipadukan dengan cheese cream yang premium.
           </p>
           <div class="price">Rp16.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1137,14 +1233,14 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan dipadukan
-           dengan cheese cream yang premium.
+            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan
+            dipadukan dengan cheese cream yang premium.
           </p>
           <div class="price">Rp16.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
 
@@ -1163,18 +1259,16 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <p>
-            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan dipadukan
-           dengan cheese cream yang premium.
+            Kombinasi susu berkualitas dicampur dengan bubuk perasa, dan
+            dipadukan dengan cheese cream yang premium.
           </p>
           <div class="price">Rp16.000;</div>
           <div class="buttons">
-            <a href="#" class="buy">GO-FOOD</a>
-            <a href="#" class="buy">GRAB-FOOD</a>
-            <a href="#" class="buy">SHOPEE-FOOD</a>
+            <a href="https://gofood.link/a/FPu5BLq" class="gojek">GO FOOD</a>
+            <a href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C3EYAEWXWAUHA6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C3EYAEWXWAUHA6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload" class="grab">GRAB FOOD</a>
+            <a href="#" class="shopee">SHOPEE FOOD</a>
           </div>
         </div>
-
-       
 
         <!-- end preview cheese -->
 
@@ -1449,8 +1543,8 @@
                     <span class="name">Sinta</span>
                     <span class="profession">Masyarakat</span>
                     <span class="deskripsi"
-                      >Pool Sueeger rasa tehnya mantep, teh dengan
-                      kualitas tinggi. Dan terjangkau pula harganya.</span
+                      >Pool Sueeger rasa tehnya mantep, teh dengan kualitas
+                      tinggi. Dan terjangkau pula harganya.</span
                     >
                   </div>
 
@@ -1527,15 +1621,14 @@
         <div>
           <p class="footer-lokasi">
             <span class="tittle-kontak">Kontak</span>
-            <strong>Holy Tea Indonesia<br /></strong> Jln Sukun Raya No.9, Besito Kulon, 
-            Besito, Kec. Gebog,<br> Kabupaten Kudus, Jawa Tengah 59333
+            <strong>Holy Tea Indonesia<br /></strong> Jln Sukun Raya No.9,
+            Besito Kulon, Besito, Kec. Gebog,<br />
+            Kabupaten Kudus, Jawa Tengah 59333
           </p>
         </div>
         <br />
         <div>
-          <i class="fa fa-phone"
-            ><img src="#" alt=""
-          /></i>
+          <i class="fa fa-phone"><img src="#" alt="" /></i>
           <p>+62 85 172 408 511</p>
         </div>
         <div>
@@ -1550,12 +1643,11 @@
       <div class="footer-right">
         <p class="footer-company-about">
           <span>Tentang Kami</span>
-          <strong>Holy Tea Indonesia</strong> | Jadi Holy Tea Indonesia adalah minuman kekinian yang berbahan dasar
-          teh. Holy Tea Indonesia
-          dibuat dari teh rebus asli dan pilihan, di tambah dengan
-          varian rasa yang beragam dan gula yang digunakan bukanlah obat
-          gula, disini menggunakan 100% gula asli yang dimana sangat aman
-          untuk di konsumsi setiap saat.
+          <strong>Holy Tea Indonesia</strong> | Jadi Holy Tea Indonesia adalah
+          minuman kekinian yang berbahan dasar teh. Holy Tea Indonesia dibuat
+          dari teh rebus asli dan pilihan, di tambah dengan varian rasa yang
+          beragam dan gula yang digunakan bukanlah obat gula, disini menggunakan
+          100% gula asli yang dimana sangat aman untuk di konsumsi setiap saat.
         </p>
         <div class="footer-icons">
           <a href="#"

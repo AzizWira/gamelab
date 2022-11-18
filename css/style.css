@@ -24,6 +24,110 @@ body {
   background: #eee;
 }
 
+/* loading*/
+
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+}
+
+.wrapper-loading{
+  width:200px;
+  height:60px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.circle-loading{
+  width:20px;
+  height:20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #21963B;
+  left:15%;
+  transform-origin: 50%;
+  animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+  0%{
+      top:60px;
+      height:5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+  }
+  40%{
+      height:20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+  }
+  100%{
+      top:0%;
+  }
+}
+.circle-loading:nth-child(2){
+  left:45%;
+  animation-delay: .2s;
+}
+.circle-loading:nth-child(3){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.shadow-loading{
+  width:20px;
+  height:4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top:62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left:15%;
+  filter: blur(1px);
+  animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+  0%{
+      transform: scaleX(1.5);
+  }
+  40%{
+      transform: scaleX(1);
+      opacity: .7;
+  }
+  100%{
+      transform: scaleX(.2);
+      opacity: .4;
+  }
+}
+.shadow-loading:nth-child(4){
+  left: 45%;
+  animation-delay: .2s
+}
+.shadow-loading:nth-child(5){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.wrapper-loading span{
+  position: absolute;
+  top:75px;
+  width: 400px;
+  font-family: 'Poppins';
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #21963B;
+}
+
+/* end loading */
+
 .body {
   margin: 0 50px;
   background: #eee;
@@ -51,15 +155,39 @@ body {
 }
 
 .active.fade-bottom {
-  animation: fade-bottom .4s ease-in;
+  animation: fade-bottom .3s ease-in;
 }
 
 .active.fade-left {
-  animation: fade-left .4s ease-in;
+  animation: fade-left .3s ease-in;
 }
 
 .active.fade-right {
-  animation: fade-right .4s ease-in;
+  animation: fade-right .3s ease-in;
+}
+
+.active.fade-bottom2 {
+  animation: fade-bottom .5s ease-in;
+}
+
+.active.fade-left2 {
+  animation: fade-left .5s ease-in;
+}
+
+.active.fade-right2 {
+  animation: fade-right .5s ease-in;
+}
+
+.active.fade-bottom3 {
+  animation: fade-bottom .7s ease-in;
+}
+
+.active.fade-left3 {
+  animation: fade-left .7s ease-in;
+}
+
+.active.fade-right3 {
+  animation: fade-right .7s ease-in;
 }
 
 @keyframes fade-bottom {
@@ -105,7 +233,7 @@ body {
   bottom: 4rem;
   border-radius: 100%;
   background: #21963B;
-  padding: 1rem;
+  padding: 1rem 1.3rem;
   border: none;
   cursor: pointer;
   opacity: 100%;
@@ -168,6 +296,12 @@ body {
   transform: translate(-50%, -50%);
   transition: 0.15s;
   z-index: 10;
+}
+
+@media only screen and (max-width: 900px) {
+  .cursor, .cursorInner {
+    display: none;
+  }
 }
 
 /*  */
@@ -433,7 +567,7 @@ body {
   top: 60px;
   left: 50px;
   display: block;
-  z-index: 11;
+  z-index: 9;
   transition: all 250ms linear;
 }
 
@@ -823,7 +957,7 @@ body {
 
 @media only screen and (max-width: 400px) {
   .news {
-    padding-top: 30px;
+    padding: 10px 0;
   }
 
   .slick-slide img {
@@ -850,9 +984,9 @@ body {
   background-attachment: fixed
 }
 
-.test-about{
-position: relative;
-margin-bottom: -5px;
+.test-about {
+  position: relative;
+  margin-bottom: -5px;
 }
 
 .tittle-about {
@@ -963,7 +1097,7 @@ margin-bottom: -5px;
 
 /* best  */
 .container-best {
-  margin: 220px 0 0 0;
+  margin: 150px 0 0 0;
 }
 
 .tittle-best {
@@ -997,20 +1131,35 @@ margin-bottom: -5px;
 }
 
 .img-left1 {
-  width: auto;
-  height: 660px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
 .img-best {
-  width: auto;
-  height: 320px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .con-img-best {
+    column-gap: 10px;
     flex-direction: column;
+  }
+  
+  .best-left {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .best-top {
+    margin-bottom: 10px;
+  }
+  
+  .best-right {
+    column-gap: 10px;
+    display: flex;
   }
 }
 
@@ -1062,6 +1211,24 @@ margin-bottom: -5px;
   color: white;
 }
 
+@media only screen and (max-width: 580px) {
+  #tabbar-menu {
+    margin-top: 80px;
+  }
+
+  .btn-menu {
+    padding: 8px 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .btn-menu {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
 /* end tabbar */
 /* new */
 
@@ -1088,6 +1255,12 @@ margin-bottom: -5px;
 .img-menu {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .new {
+    margin: 80px 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1187,7 +1360,17 @@ margin-bottom: -5px;
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 7;
+  z-index: 10;
+}
+
+@keyframes delay {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
 }
 
 .preview-card {
@@ -1198,6 +1381,7 @@ margin-bottom: -5px;
   position: relative;
   margin: 2rem;
   width: 40rem;
+  animation: delay .7s ease-in-out;
 }
 
 .preview-card.active-preview {
@@ -1205,7 +1389,7 @@ margin-bottom: -5px;
 }
 
 .preview-card img {
-  height: 30rem;
+  max-height: 20rem;
 }
 
 .fa-times {
@@ -1264,8 +1448,18 @@ margin-bottom: -5px;
   border: .1rem solid #444;
 }
 
-.buttons a.buy:hover {
-  background: #444;
+.buttons a.grab:hover {
+  background: #029837;
+  color: #fff;
+}
+
+.buttons a.gojek:hover {
+  background: #EB2836;
+  color: #fff;
+}
+
+.buttons a.shopee:hover {
+  background: #EE4E2E;
   color: #fff;
 }
 
@@ -1286,25 +1480,34 @@ margin-bottom: -5px;
 
 }
 
+
+
 #tea {
   margin-top: 100px;
 }
+
+
 
 #yakult {
   margin-top: 100px;
 }
 
+
+
 #coffee {
   margin-top: 100px;
 }
+
 
 #milkshake {
   margin-top: 100px;
 }
 
+
 #cheese {
   margin-top: 100px;
 }
+
 
 /* end menu */
 
@@ -1312,6 +1515,12 @@ margin-bottom: -5px;
 /* === Google Font Import - Poppins === */
 .testimonial {
   margin: 220px 0 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .testimonial {
+    margin: 80px 0;
+  }
 }
 
 .con-testimonial {
