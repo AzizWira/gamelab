@@ -1,8 +1,8 @@
 // if the page has finished loading, the page loading will close
 
-window.onload = () => {
-    document.getElementById("loading").style.display = "none";
-}
+// window.onload = () => {
+//     document.getElementById("loading").style.display = "none";
+// }
 
 // funchion tabbar
 
