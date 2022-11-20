@@ -1,8 +1,8 @@
 // funchion loading
 
-window.onload = () => {
-    document.getElementById("loading").style.display = "none";
-}
+// window.onload = () => {
+//     document.getElementById("loading").style.display = "none";
+// }
 
 // end funchion loading
 

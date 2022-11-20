@@ -238,6 +238,7 @@ body {
   cursor: pointer;
   opacity: 100%;
   transition: opacity 0.5s;
+  animation: flutuar 2.5s linear infinite;
 }
 
 .back-to-top:hover {
@@ -254,6 +255,18 @@ body {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .back-to-top {
+    right: 2rem;
+    bottom: 3rem;
+  }
+
+  .back-to-top-icon {
+    width: auto;
+    height: 3rem;
+    color: #ffffff;
+  }
+}
 /*  */
 
 /* progress bar */
@@ -587,6 +600,7 @@ body {
   }
 
   .logo {
+    top: 40px;
     left: 30px;
   }
 
@@ -604,7 +618,7 @@ body {
 .intro {
   display: flex;
   background: linear-gradient(0deg, rgba(188, 188, 188, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-  border-radius: none;
+  border-radius: 0px 0px 100px 100px;
   padding: 150px 160px 130px 120px;
 }
 
@@ -1514,7 +1528,7 @@ body {
 /* testimonial */
 /* === Google Font Import - Poppins === */
 .testimonial {
-  margin: 220px 0 0 0;
+  margin: 100px 0 0 0;
 }
 
 @media only screen and (max-width: 900px) {
