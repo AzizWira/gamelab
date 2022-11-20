@@ -378,3 +378,68 @@ function reveal() {
 window.addEventListener('scroll', reveal)
 
 //
+
+// instruction
+
+const lanjut = document.querySelectorAll('.lanjut');
+const instruction = document.querySelectorAll('.instruction');
+let position = 0;
+
+lanjut.forEach(lanjut => {
+    lanjut.addEventListener('click', () => {
+        position += -100;
+        instruction.forEach(instruction => {
+            instruction.style.transform = `translateX(-${0 - position}%)`
+        })
+    })
+})
+
+const kembali = document.querySelectorAll('.kembali');
+kembali.forEach(kembali => {
+    kembali.addEventListener('click', () => {
+        position += 100;
+        instruction.forEach(instruction => {
+            instruction.style.transform = `translateX(-${0 - position}%)`
+        })
+    })
+})
+
+const skip = document.getElementById('skip');
+const instructionBg = document.querySelectorAll('.instruction-bg');
+const iContainer = document.querySelectorAll('.instruction-container');
+const mulai = document.querySelectorAll('.mulai');
+
+skip.addEventListener('click', () => {
+    instructionBg.forEach(instructionBg => {
+        instructionBg.style.animation = 'fadeOut .5s ease-in-out forwards',
+        instructionBg.style.animationDelay = '.5s'
+    })
+    iContainer.forEach(iContainer => {
+        iContainer.style.animation = 'scaleOut .5s ease-in-out forwards',
+        iContainer.style.animationDelay = '0s'
+    })
+})
+
+mulai.forEach(mulai => {
+    mulai.addEventListener('click', () => {
+        instructionBg.forEach(instructionBg => {
+            instructionBg.style.animation = 'fadeOut .5s ease-in-out forwards',
+            instructionBg.style.animationDelay = '.5s'
+        })
+        iContainer.forEach(iContainer => {
+            iContainer.style.animation = 'scaleOut .5s ease-in-out forwards',
+            iContainer.style.animationDelay = '0s'
+        })
+    })
+})
+
+function limit(element)
+{
+    var max_chars = 8;
+
+    if(element.value.length > max_chars) {
+        element.value = element.value.substr(0, max_chars);
+    }
+}
+
+
