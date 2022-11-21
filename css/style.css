@@ -289,7 +289,7 @@ body {
   border-radius: 50px;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 100;
 }
 
 /*  */
@@ -368,12 +368,12 @@ body {
 .nav_link li a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .nav_link li a:hover {
-  color: #8bc1ff;
+  color: #999;
   transition: all 0.3s ease;
 }
 
@@ -382,28 +382,9 @@ body {
   height: auto;
 }
 
-/* -------Navbar baru------ */
-
-.navbar-left, .navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-#navbar .logo-esport{
-  position: relative;
-  top: 48px;
-}
-
-.logo-esport img{
-  width: 250px;
-  height: 200px;
-}
-
-/* ------end Navbar baru */
-
-.navbar-right .register-dekstop a {
+.navbar-right a {
   background-color: #FFFFFF;
-  color: #576696;
+  color: #029837;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
@@ -413,43 +394,15 @@ body {
   font-weight: 600;
 }
 
-.navbar-right .register-dekstop a:hover {
-  background-color: #8bc1ff;
+.navbar-right a:hover {
+  background-color: #029837;
   color: #fff;
 }
-
-.register-mobile {
-  list-style: none;
-  display: none;
-}
-
-.register-mobile .btn-register {
-  background-color: #FFFFFF;
-  color: #576696;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.register-mobile .btn-register:hover {
-  background-color: #8bc1ff;
-  color: #fff;
-}
-
-.register-dekstop {
-  list-style: none;
-}
-
-
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: #27ae60;
 }
 
 .hover-underline-animation:after {
@@ -524,15 +477,11 @@ body {
   transform: scale(0);
 }
 
-.contact-timeline{
-  display: none;
-}
-
 /* ------- Responsive Navbar ------ */
 /* ukuran tablet */
 @media screen and (max-width: 1068px) {
   #navbar-1 ul {
-    width: 50%;
+    width: 40%;
   }
   .logo-esport{
     display: none;
@@ -540,7 +489,7 @@ body {
 }
 
 /* ukuran mobile */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 2560px) {
   .menu-toggle {
     display: flex;
   }
@@ -549,7 +498,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 60%;
+    width: 30%;
     height: 100vh;
     padding-top: 50px;
     justify-content: space-evenly;
@@ -567,7 +516,7 @@ body {
   #navbar-1 ul.slide {
     transform: translateX(0);
     opacity: 1;
-    padding: 100px;
+    padding: 100px 100px;
   }
 
   .register-mobile {
@@ -1719,7 +1668,7 @@ body {
 
 .container-contact {
   flex: 0 1 700px;
-  padding-top: 50px;
+  padding-top: 100px;
   margin: 50px auto;
   max-width: 800px;
 }
