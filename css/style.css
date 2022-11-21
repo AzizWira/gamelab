@@ -293,7 +293,7 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.1s;
+  transition: 0.05s;
   z-index: 10;
 }
 
@@ -307,7 +307,7 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.15s;
+  transition: 0.1s;
   z-index: 10;
 }
 
