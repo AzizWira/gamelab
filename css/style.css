@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: #eee;
+  background: #ffffff;
 }
 
 /* loading*/
@@ -130,7 +130,7 @@ body {
 
 .body {
   margin: 0 50px;
-  background: #eee;
+  background: #ffffff;
 }
 
 .example {
@@ -617,9 +617,9 @@ body {
 
 .intro {
   display: flex;
-  background: linear-gradient(0deg, rgba(188, 188, 188, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #eee 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 0px 0px 100px 100px;
-  padding: 150px 160px 130px 120px;
+  padding: 130px 160px 130px 120px;
 }
 
 .text-intro {
@@ -1311,7 +1311,7 @@ body {
 
 .card-product {
   text-align: center;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
   cursor: pointer;
   content: normal;
 }
@@ -1401,7 +1401,7 @@ body {
   display: none;
   padding: 2rem;
   text-align: center;
-  background: #fff;
+  background: #eee;
   position: relative;
   margin: 2rem;
   width: 40rem;
@@ -1696,7 +1696,7 @@ body {
 }
 
 .card .button button {
-  background: #7d2ae8;
+  background: #27ae60;
   outline: none;
   border: none;
   color: #fff;
@@ -1708,7 +1708,7 @@ body {
 }
 
 .button button:hover {
-  background: #6616d0;
+  background: #029837;
 }
 
 .swiper-pagination {
@@ -1719,12 +1719,12 @@ body {
   height: 10px;
   width: 29px;
   border-radius: 25px;
-  background: #7d2ae8;
+  background: #029837;
 }
 
 .swiper-button-next, .swiper-button-prev {
   opacity: 0.7;
-  color: #7d2ae8;
+  color: #029837;
   transition: all 0.3s ease;
 }
 
@@ -1740,13 +1740,12 @@ body {
 .container-contact {
   flex: 0 1 700px;
   margin: 50px auto;
-  padding: 10px;
   max-width: 800px;
 }
 
 .screen-contact {
   position: relative;
-  background: #f8f8f8;
+  background: #ececec;
   border-radius: 15px;
 }
 

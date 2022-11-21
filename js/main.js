@@ -404,21 +404,10 @@ kembali.forEach(kembali => {
     })
 })
 
-const skip = document.getElementById('skip');
+
 const instructionBg = document.querySelectorAll('.instruction-bg');
 const iContainer = document.querySelectorAll('.instruction-container');
 const mulai = document.querySelectorAll('.mulai');
-
-skip.addEventListener('click', () => {
-    instructionBg.forEach(instructionBg => {
-        instructionBg.style.animation = 'fadeOut .5s ease-in-out forwards',
-        instructionBg.style.animationDelay = '.5s'
-    })
-    iContainer.forEach(iContainer => {
-        iContainer.style.animation = 'scaleOut .5s ease-in-out forwards',
-        iContainer.style.animationDelay = '0s'
-    })
-})
 
 mulai.forEach(mulai => {
     mulai.addEventListener('click', () => {
