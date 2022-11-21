@@ -1,3 +1,19 @@
+const menuToggle = document.querySelectorAll('.menu-toggle input');
+const nav = document.querySelector('#navbar-1 ul');
+
+menuToggle.forEach(function(toggle) {
+  toggle.addEventListener('click', function(){
+        nav.classList.toggle('slide');
+        //close navbar when click outside
+        document.addEventListener('click', function(e){
+            if(e.target !== nav && e.target !== toggle){
+                nav.classList.remove('slide');
+                toggle.checked = false;
+            }
+        });
+    });
+})
+
 // funchion loading
 
 window.onload = () => {
